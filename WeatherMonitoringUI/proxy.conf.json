@@ -1,0 +1,31 @@
+// {
+//   "/api": {
+//     "target": "https://smarteats.onrender.com",
+//     "secure": false,
+//     "changeOrigin": true,
+//     "logLevel": "silent",
+//     "pathRewrite": {
+//       "^/api": ""
+//     }
+//   }
+// }
+
+// "serve": {
+//   "options": {
+//     "proxyConfig": "proxy.conf.json"
+//   }
+// }
+
+
+{
+  "/api/auth": {
+    "target": "http://localhost:3000",
+    "secure": false,
+    "changeOrigin": true
+  },
+  "/api/weather": {
+    "target": "http://localhost:3000",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
