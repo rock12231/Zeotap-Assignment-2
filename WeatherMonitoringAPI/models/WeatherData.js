@@ -17,10 +17,6 @@ const WeatherData = sequelize.define('WeatherData', {
   condition: {
     type: DataTypes.STRING,
     allowNull: false
-  },
-  timestamp: {
-    type: DataTypes.DATE,
-    allowNull: false
   }
 }, {
   timestamps: true, // Disable auto-generated timestamps

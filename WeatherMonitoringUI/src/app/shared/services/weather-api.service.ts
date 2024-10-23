@@ -12,7 +12,7 @@ export class WeatherApiService {
 
   // Method to get weather data by city
   getWeatherByCity(city: string): Observable<any> {
-    const url = `${this.baseUrl}/city/${city}`;
+    const url = `${this.baseUrl}/${city}`;
     return this.http.get(url);
   }
 

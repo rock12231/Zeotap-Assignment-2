@@ -3,8 +3,9 @@ const cors = require('cors');
 const express = require('express');
 const sequelize  = require('./config/database'); 
 const weatherRoutes = require('./routes/weather');
-const authRoutes = require('./routes/auth'); // Include auth routes
-require("./scheduler");
+const authRoutes = require('./routes/auth');
+require("./scheduler/scheduler");
+
 const app = express();
 app.use(cors());
 app.use(express.json());
