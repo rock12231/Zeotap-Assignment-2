@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { WeatherApiService } from '../../shared/services/weather-api.service';
 import { CommonModule } from '@angular/common';
+import { WeatherChartComponent } from "../chart/weather-chart/weather-chart.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, WeatherChartComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

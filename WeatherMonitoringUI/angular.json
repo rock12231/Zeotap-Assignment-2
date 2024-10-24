@@ -20,7 +20,8 @@
               "zone.js"
             ],
             "allowedCommonJsDependencies": [
-              "sweetalert2"
+              "sweetalert2",
+              "apexcharts"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -41,10 +42,6 @@
               "src/assets/vendor/libs/popper/popper.js",
               "src/assets/vendor/js/bootstrap.js",
               "src/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js",
-              "src/assets/vendor/js/menu.js",  
-              "src/assets/vendor/libs/apex-charts/apexcharts.js",
-              "src/assets/js/main.js",
-              "src/assets/js/dashboards-analytics.js"
             ],
             "server": "src/main.server.ts",
             "prerender": true,
